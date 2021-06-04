@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vue app</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+　　　　
+    <div id="app">
+        <p>Total Likes: {{ total }}</p>
+        <like-component message="Like" @increment="incrementTotal"></like-component>
+        <like-component message="Awesome" @increment="incrementTotal"></like-component>
+        <like-component message="Great" @increment="incrementTotal"></like-component>
+        <like-component @increment="incrementTotal"></like-component>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+<!-- コンポーネントの登録　コンポーネントは複製簡単 -->
